@@ -1,0 +1,20 @@
+{
+  "name": "scripturereel-server",
+  "version": "1.0.0",
+  "description": "ScriptureReel backend server — proxies xAI Grok TTS and video generation",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "form-data": "^4.0.0",
+    "node-fetch": "^3.3.2"
+  }
+}
