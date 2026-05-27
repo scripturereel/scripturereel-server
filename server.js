@@ -15,12 +15,7 @@ const PORT = process.env.PORT || 3001;
 // ── Middleware ──────────────────────────────────────────────────────────────
 app.use(express.json({ limit: "2mb" }));
 app.use(cors({
-  origin: [
-    "https://claude.ai",
-    "http://localhost:3000",
-    "http://localhost:5173",
-    // Add your deployed frontend URL here when ready
-  ],
+  origin: true, // Allow all — xAI key is per-request, not stored server-side
   methods: ["GET", "POST", "OPTIONS"],
   allowedHeaders: ["Content-Type", "x-api-key"],
 }));
